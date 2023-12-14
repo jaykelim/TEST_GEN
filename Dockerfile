@@ -11,9 +11,11 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/jaykelim/TEST_GEN
+#RUN git clone https://github.com/jaykelim/TEST_GEN
 
-RUN pip install -r requirements.txt
+COPY . .
+
+RUN pip install -v -r requirements.txt
 
 EXPOSE 8501
 
