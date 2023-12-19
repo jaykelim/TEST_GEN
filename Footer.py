@@ -70,6 +70,6 @@ def footer():
               width=px(25), height=px(25)),
         " by Jayke Lim",
         br(),
-        link("https://github.com/jaykelim/VisionAssist", "Github"),
+        link("https://github.com/jaykelim/TEST_GEN", "Github"),
     ]
     layout(*myargs)
